@@ -1,3 +1,4 @@
+#pragma once
 #include "hardware/pwm.h"
 #include "pico/stdlib.h"
 
