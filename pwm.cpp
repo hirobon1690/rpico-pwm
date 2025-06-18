@@ -30,7 +30,7 @@ void Pwm::write(float duty) {
     } else if (duty < MIN_DUTY) {
         duty = MIN_DUTY;
     }
-    pwm_set_chan_level(slice, channel, (uint16_t)4095 * duty);
+    pwm_set_chan_level(slice, channel, (uint16_t)(4095 * duty));
     pwm_set_enabled(slice, 1);
     this->duty = duty;
 }
